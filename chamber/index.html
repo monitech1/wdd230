@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumasi Chamber of Commerce</title>
+    <meta name="author" content="Monigan Daniel">
+    <meta 
+        name="description" 
+        content="Kumasi Chamber of Commerce
+        Home Page">
+    <!-- favicon -->
+    <link rel="icon" href="images/favd-favicon.ico.png">
+    <!-- meta tags for social media use -->
+    <meta property="og:title" content="Kumasi Chamber of Commerce - Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is the home page of the Brugg Chamber of Commerce.">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com%2FTourism-g317061-Kumasi_Ashanti_Region-Vacations.html&psig=AOvVaw3xOf6ypY58ZbM4cAc-KYAS&ust=1706802329736000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJjV9cuMiIQDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://monitech1.github.io/wdd230//chamber/">
+    <meta property="og:site_name" content="Kumasi Chamber of Commerce">
+    <!-- link CSS stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- add -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- link to font for this page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+        <img src="images/logo design1.png" alt="Kumasi Chamber of Commerce Logo"></a>
+        <h1>Kumasi Chamber of Commerce</h1>
+    </header>
+    <button id="menu" title="hamburger-menu"></button> 
+    <button id="join" title="join-button">Join</button> <!-- add -->
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+    <div id="hero">
+        <img src="images/banner" alt="Kumasi, Ghana">
+        <h2>Welcome to Kumasi Chamber of Commerce</h2>
+        <div class="transp-backg"></div>
+    </div>
+    <main class="home-grid">
+        <div class="city-card">
+            <img src="images/placeh.webp" alt="placeholder 1">
+            <section class="city-text">        
+                <h3>About Kumasi</h3>
+                <p>Kumasi (historically spelled Comassie or Coomassie, usually spelled Kumase in Twi language) is a city in the Ashanti Region, and is among the largest metropolitan areas in Ghana. Located in a rainforest region near Lake Bosomtwe, Kumasi serves as the commercial, industrial, and cultural capital of the historical Ashanti Empire. Approximately 500 kilometres (300 mi) north of the Equator and 200 kilometres (100 mi) north of the Gulf of Guinea, Kumasi is alternatively known as "The Garden City" because of its many species of flowers and plants in the past. It is also called Oseikrom, after Osei Kofi Tutu I, who was a king in the Ashanti Empire.</p>
+          </section>
+            <img src="images/placeh.webp" alt="placeholder 2">
+            <section class="discover-text">
+                <h3>News in Kumasi</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae vel nesciunt beatae saepe laudantium, perferendis reprehenderit placeat, debitis officia quia sunt rerum, minima quos. Voluptatum sint quod laudantium magni maiores hic qui ratione adipisci dolorem recusandae fuga soluta, ducimus suscipit eius amet perspiciatis molestias nihil possimus! Minus, quia aperiam.</p>
+            </section>
+            <img src="images/placeh.webp" alt="placeholder 3">
+            <section class="weather">
+                <h3>Weather</h3>
+                <p>Kumasi, Kumasi</p>
+                <p>Current: 10&deg;C</p> <!-- add -->
+                <p>High: 12&deg;C</p>
+                <p>Low: 8&deg;C</p>
+            </section>
+        </div>
+        <div id="background"></div>
+        <div class="directory-card">
+            <img src="images/placeh.webp" alt="placeholder 4">
+            <section class="directory-text">
+                <h3>Next Event</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam repellendus, quam a vitae iusto, cupiditate eum incidunt, quod atque eligendi praesentium cumque illo! A voluptatibus officiis doloribus libero eum dolorem dolore, inventore quisquam et odit illo dignissimos. Ipsam, molestiae.</p>
+            </section>
+        </div>
+        <div class="spotlight-card">
+            <img src="images/placeh.webp" alt="placeholder 5">
+            <section class="spotlight-text">
+                <h3>Spotlight 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam repellendus, quam a vitae iusto, cupiditate eum incidunt, quod atque eligendi praesentium cumque illo! A voluptatibus officiis doloribus libero eum dolorem dolore, inventore quisquam et odit illo dignissimos. Ipsam, molestiae.</p>
+            </section>
+            <img src="images/placeh.webp" alt="placeholder 6">
+            <section class="spotlight-text">
+                <h3>Spotlight 2</h3>
+                <p>Geographical Charms:
+                    Situated in a lush rainforest region near the picturesque Lake Bosomtwe, Kumasi boasts not only natural beauty but also a strategic location. Approximately 500 kilometers north of the Equator and 200 kilometers north of the Gulf of Guinea, the city's geographical positioning has played a crucial role in its historical and economic significance.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Kumasi Chamber of Commerce</p>
+        <p>Monigan Daniel| WDD 230 Web Frontend Development</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsivemenu.js"></script>
+</body>
+</html>
