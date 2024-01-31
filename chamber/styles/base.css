@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+/* header */
+header img {
+    width: 100px;
+    height: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #839b90;
+    color: white;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    justify-content: left;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* responsive and hamburger menu */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #E9F1EE;
+}
+
+.navigation a {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0B261A;
+    font-size: 18px;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    padding: 3px 7px 6px;
+    border: 1px solid rgba(0,0,0,.3);
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation a:hover {
+    background-color: #274F34;
+    color: #E9F1EE;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "> ";
+}
+
+/* call to action JOIN button */
+#join {
+    background-color: #A69B83;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000; 
+}
+
+/* div hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#hero h2 {
+    position: absolute;
+    bottom: 50px;
+    color: #0B261A;
+    background-color: #E9F1EE;
+    padding: 10px;
+}
+
+/* main */
+
+/* footer */
+footer {
+    background-color: #0B261A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
