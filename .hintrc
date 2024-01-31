@@ -11,6 +11,8 @@
           "-webkit-text-size-adjust"
         ]
       }
-    ]
+    ],
+    "axe/language": "off",
+    "meta-viewport": "off"
   }
 }
