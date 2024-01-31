@@ -1,0 +1,18 @@
+
+/* h2 ul .linklist li {
+  background-color: brown;
+} */
+main ul {
+    background-color: greenyellow;
+  }
+  .linklist, ul, li {
+    background-color: brown;
+  }
+  .linklist li {
+    background-color: blue;
+  }
+  
+  /* h2, ul, .linklist, li
+  {
+    background-color: brown;
+  } */
