@@ -1,5 +1,6 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 850px) {
 
+    /* responsive navigation bar */
     .navigation {
         display: flex;
         flex-direction: row;
@@ -11,6 +12,54 @@
     #menu {
         display: none;
     }
+    /* toggle switch */
+    header {
+        position: relative;
+    }
+    .switch {
+        position: absolute;
+        display: inline-block;
+        top: 1rem;
+        right: 1rem;
+        width: 60px;
+        height: 34px;
+    }
+   
+   /* responsive grid */ 
+    .events-box {
+        display: flex;
+        grid-row: 2 / 3;
+        background-color: #E9F1EE;
+        align-items: center;
+    }
 
+    /* remove border and shadow from spotlight cards */
+    .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
+        border: none;
+        box-shadow: none;
+    }
 
+    /* imgages */
+    main img {
+        width: 300px;
+        height: auto;
+    }
+
+    /* responsive footer */
+    footer {
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        text-align: center;
+    }
+    .logo-footer {
+        grid-column: 1 / 2;
+    }
+    
+    .info-author {
+        grid-column: 2 / 4;
+    }
+
+    hr {
+        display: none;
+    }
 }
