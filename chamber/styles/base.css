@@ -11,10 +11,6 @@ body {
     margin: 0 auto;
     font-family: 'Noto Sans', sans-serif;
 }
-main img {
-    width: 180px;
-    height: auto;
-}
 
 /* header */
 header img {
@@ -24,7 +20,7 @@ header img {
     border-radius: 10px;
 }
 header {
-    background-color: #70d4a7;
+    background-color: #85e9bc;
     color: white;
     width: 100%;
     display: flex;
@@ -60,7 +56,7 @@ h1, h2, h3 {
     font-size: 1.5rem;
     padding: 3px 7px 6px;
     border: 1px solid rgba(0,0,0,.3);
-	background-color: #eee;
+	background-color: #fdbcbc;
 	color: #000;
 }
 #menu::before {
@@ -70,7 +66,7 @@ h1, h2, h3 {
     content: "✖";
 }
 .navigation a:hover {
-    background-color: #274F34;
+    background-color: #82d39c;
     color: #E9F1EE;
     font-weight: 700;
 }
@@ -135,7 +131,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* div hero */
+/* responsive hero image */
 #hero {
     display: flex;
     flex-direction: column;
@@ -143,21 +139,21 @@ input:checked + .slider:before {
     align-items: center;
     position: relative;
 }
-.hero-img {
+.hero-img img {
     width: 100%;
     height: auto;
 }
 #hero h2 {
     position: absolute;
     bottom: 90px;
-    color: #628676;
+    color: #0B261A;
     background-color: #E9F1EE; /* add transparent background */
     padding: 10px;
 }
 
 /* call to action JOIN button */
 #join {
-    background-color: #b1965b;
+    background-color: #A69B83;
     color: black;
     padding: 10px;
     font-size: 18px;
@@ -198,6 +194,11 @@ h3 {
 .weather-card {
     grid-column: 3 / 4;
 }
+.card-img img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
 
 .events-box {
     display: grid;
@@ -206,7 +207,7 @@ h3 {
     align-items: center;
     text-align: center;
 }
-#event-img {
+.event-img img {
     display: block;
     margin: 0 auto; /* center the image horizontally */
 }
@@ -226,7 +227,7 @@ h3 {
     grid-column: 3 / 4;
 }
 .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
-    border: 1px solid #678570;
+    border: 5px solid #274F32;
     padding: 10px;
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
@@ -237,7 +238,7 @@ h3 {
 }
 
 .contact {
-    color: #66ad7a;
+    color: #274F32;
     font-weight: bold;
 }
 
@@ -249,7 +250,7 @@ h3 {
 
 /* footer */
 footer {
-    background-color: #517464;
+    background-color: #0B261A;
     color: white;
     padding: 20px;
     display: grid;
@@ -265,9 +266,36 @@ footer img {
 .info-footer, .contact-footer, .info-author {
     padding: 10px;
 }
+
 hr {
     width: 100%;
     border: none;
     border-top: 1px solid white;
     margin: 1em 0;
+}
+
+/* DISCOVER PAGE */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    gap: 10px;
+}
+
+.page-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.side-info {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #32583d;
+}
+
+.side-info h3 {
+    text-align: center;
 }
