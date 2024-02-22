@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Learning Activity</title>
+    <meta name="author" content="Monigan Daniel">
+    <meta 
+        name="description" 
+        content="WDD230 -
+        Week 06 Lazy Loading Learning Activity">
+    <link rel="stylesheet" href="styles/lazyloading.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Learning Activity</h1>
+    </header>
+    <main>
+        <h2>place kitten cat</h2>
+        <picture>
+            <img src="images/cat.webp" alt="cat playing" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/cat2.webp" alt="cat playing" width="400" height="600">
+        </picture>
+        <picture>
+            <img loading="lazy" src="images/cat3.webp" alt="cat playing" width="400" height="600">
+        </picture>
+        <picture>
+            <img loading="lazy" src="images/cat 4.webp" alt="cat playing" width="400" height="600">
+        </picture>
+        <picture>
+            <img loading="lazy" src="images/cat5.webp" alt="cat playing" width="400" height="600">
+        </picture>
+        <picture>
+            <img loading="lazy" src="images/cat 6.webp" alt="cat playing" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy<span id="year"></span> Monigan Daniel | WDD 230 | Last Modified:<span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/lazyloading.js"></script>
+</body>
+</html>
