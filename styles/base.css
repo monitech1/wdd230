@@ -115,6 +115,10 @@ li {
     border-bottom: 1px solid gray;
 }
 
+iframe {
+    border: 0;
+}
+
 .card {
     display: grid;
     border: 1px solid gray;
