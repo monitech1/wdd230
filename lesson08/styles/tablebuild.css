@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+table {
+    margin: 10px auto;
+    border: 1px solid #364542;
+    box-shadow: 0 0 10px #000;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
+    color: #364542;
+}
+
+th, td {
+    padding: 7px 15px;
+}
+
+th {
+    background-color: #364542; /* header color */
+    color: #fff;
+    font-size: larger;
+    border: 1px solid #364542; /* cell color */
+    padding: 7px 15px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #f0f0f0; /* cell color */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #DDE4E2; /* even row color */
+}
+
+.special-header {
+    background-color: #516762; /* special header color */
+}
+
+.special-row {
+    font-weight: bold;
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --main-color: #4101d6;
+    --red-color: #21048b;
+    --green-color: #248562;
+    --back: #fdfdfd;
+    --back2: #CFC0BD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* main */
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+}
+
+/* header */
+header {
+    background-color: var(--red-color);
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center; /*center-align horizontally*/
+    align-items: center; /*center-align vertically*/
+}
+
+.photovei {
+    max-width: 10%;
+    height: auto;
+    border-radius: 5%; /* corner radius */
+}
+
+header h1 {
+    color: white;
+    padding: 15px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+/* navigation bar */
+nav {
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: var(--red-color);
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 15px;
+}
+footer p {
+    color: white;
+    margin: 10px;
+}
+
+/* responsive menu for smaller screens */
+/* hamburger menu */
+#menu {
+    font-size: 1.5rem;
+    padding: 3px 7px 6px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+/* open icon */
+#menu::before {
+    content: "☰";
+}
+/* close icon */
+#menu.open::before {
+    content: "✖";
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--back);
+}
+/* hide navigation menu */
+nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+/* style hover effect */
+nav a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* show navigation menu when hamburger menu is clicked */
+.open a {
+    display: block;
+}
+/* display icon around the open menu item using CSS pseudo-elements */
+.active::before {
+    content: "| ";
+    /* padding-right: 1rem; */
+}
+.active::after {
+    content: " |";
+    /* padding-left: 1rem; */
+}
+
+/*---------- form ----------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--main-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    margin: 1rem 0;
+    font-size: .8rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 25rem;
+    background-color: var(--back);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 90%;
+    max-width: 25rem;
+}
+
+form label.top input:required {
+    border-left: var(--red-color) solid 6px;
+}
+form label.top input:required:valid {
+    border-left: var(--green-color) solid 6px;
+}

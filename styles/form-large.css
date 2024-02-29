@@ -1,0 +1,25 @@
+@media only screen and (min-width: 900px) {
+    /* horizontal navigation bar */
+    nav {
+        display: flex; /* display links side-by-side */
+        flex-direction: row; /* display links side-by-side */
+        justify-content: space-around; /* space out links */
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    /* adjust padding and margin */
+    nav a {
+        display: block;
+        flex: 1 1 100%; /* make links span the width of the column */
+        text-align: center; /* center-align text */
+    }
+    /* fix width of header, nav and footer */
+    header, nav, footer {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    /* hide hamburger button in larger screens */
+    #menu {
+        display: none;
+    }
+}
