@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', cursive, serif;
+}
+
+h1 {
+    color: #000;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    color: navy;
+    margin: 0 0 1rem 0;
+}
+
+main {
+    margin-left: 2rem;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    border: 1px solid #555;
+    padding: 10px;
+    background-color: rgba(168, 177, 216, 0.22);
+}
+
+section {
+    width: calc(100% - 1rem);
+    border: 1px solid #000;
+    margin: .25rem;
+    padding: .35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(124, 133, 173, 0.33);
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    box-shadow: 0 0 10px #000;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding-top: 10px;
+    border-top: 1px solid #555;
+    color: navy;
+}
