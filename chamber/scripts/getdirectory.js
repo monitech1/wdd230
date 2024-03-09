@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/data/members.json";
+const url = "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/data/members.JSON";
 
 const directory = document.querySelector('#directory');
 
