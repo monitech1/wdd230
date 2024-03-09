@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kumasi Chamber of Commerce - Directory</title>
+    <title>Kumasi Chamber of Commerce Directory</title>
     <meta name="author" content="Monigan Daniel">
-    <meta name="description" content="Kumasi Chamber of Commerce - Directory Page">
+    <meta 
+        name="description" 
+        content="Kumasi Chamber of Commerce
+        - Home Page
+        - WDD230 Web Frontend Development Project">
     <!-- favicon -->
     <link rel="icon" href="images/favd-favicon.ico.png">
     <!-- meta tags for social media use -->
-    <meta property="og:title" content="Kumasi Chamber of Commerce - Directory Page">
+    <meta property="og:title" content="Kumasi Chamber of Commerce - Home Page">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="This is the directory page of the Kumasi Chamber of Commerce.">
+    <meta property="og:description" content="This is the home page of the Kumasi Chamber of Commerce.">
     <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com%2FTourism-g317061-Kumasi_Ashanti_Region-Vacations.html&psig=AOvVaw3xOf6ypY58ZbM4cAc-KYAS&ust=1706802329736000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJjV9cuMiIQDFQAAAAAdAAAAABAE">
-    <meta property="og:url" content="https://monitech1.github.io/wdd230/chamber/directory.html">
+    <meta property="og:url" content="https://monitech1.github.io/wdd230//chamber/">
     <meta property="og:site_name" content="Kumasi Chamber of Commerce">
     <!-- link CSS stylesheets -->
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- add -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -25,15 +29,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&display=swap" rel="stylesheet"> 
-    <style>
-        /* Add any additional CSS styles specific to the directory page here */
-    </style>
 </head>
 <body>
     <header>
         <a id="logo-link" href="index.html">
-            <img src="images/logo design1.png" alt="Kumasi Chamber of Commerce Logo">
-        </a>
+        <img src="images/logo design1.png" alt="Chamber of Commerce Logo"></a>
         <h1>Kumasi Chamber of Commerce</h1>
         <label class="switch" aria-label="Toggle Switch">
             <input type="checkbox">
@@ -42,16 +42,24 @@
     </header>
     <button id="menu" title="hamburger-menu"></button> 
     <nav class="navigation">
+        <a href="#">Home</a>
         <a href="index.html">Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="#" class="active">Directory</a>
+        <a href="discover.html" class="active">Discover</a>
+        <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
     </nav>
-    <main class="home-grid">
-        <!-- Directory Listing Content Will Go Here -->
+
+    <main>
+        <h2 class="page-title">Our Directory</h2>
+        <div class="directory-menu">
+            <button id="directory-grid">Grid</button>
+            <button id="directory-list">List</button>
+        </div>
+        <article id="directory" class="d-grid"></article> <!-- directory to insert here accessing a json file through javascript -->
     </main>
+    
     <footer>
-        <img src="images/logo design1.png" alt="Brugg Chamber of Commerce Logo" class="logo-footer">
+        <img src="images/logo design1.png" alt="Kumasi Chamber of Commerce Logo" class="logo-footer">
         <div class="info-footer">
             <p>Kumasi Chamber of Commerce</p>
             <p>Oseikrom 193, 51200 Kumasi, AG</p>
@@ -68,9 +76,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script>
-        // Add JavaScript for toggling between grid and list view here
-        // Fetch data from members.json and populate the directory listing
-    </script>
+    <script src="scripts/getlastvisit.js"type="module"></script>
+    <script src="scripts/getdirectory.js"type="module"></script>
+    <script src="scripts/directory.js"type="module"></script>
 </body>
 </html>
