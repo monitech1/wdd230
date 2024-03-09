@@ -1,60 +1,61 @@
 {
-  "members": [
+    "members": [
       {
-          "name": "Electricity Company",
-          "address": "GH Second Flow St, Kumasi, Ghana",
-          "phone": "2354-456-7890",
-          "website": "https://www.ecg.com.gh/index.php/en/",
-          "image":  "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/ecg.webp",
-          "membership_level": "Gold"
+        "name": "Electricity Company",
+        "address": "GH Second Flow St, Kumasi, Ghana",
+        "phone": "2354-456-7890",
+        "website": "https://www.ecg.com.gh/index.php/en/",
+        "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/ecg.webp",
+        "membership_level": "Gold"
       },
       {
-          "name": "Creative Logo",
-          "address": "HN 39/40 kumasi Ghana",
-          "phone": "555-987-6543",
-          "website": "https://www.bing.com/images/search?q=creative%20logo&form=IQFRML&first=1",
-          "image": "https://raw.githubusercontent.com/monitech1/wdd230/tree/main/chamber/images/creative.webp",
-          "membership_level": "Silver member"
+        "name": "Creative Logo",
+        "address": "HN 39/40 kumasi Ghana",
+        "phone": "555-987-6543",
+        "website": "https://www.bing.com/images/search?q=creative%20logo&form=IQFRML&first=1",
+        "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/creative.webp",
+        "membership_level": "Silver member"
       },
       {
-          "name": "Leniits",
-          "address": "88 Freight Lane, Tamale, CT 06611, Ghana",
-          "phone": "555-456-7890-6777",
-          "website": "https://leniits.com",
-          "image": "https://raw.githubusercontent.com/monitech1/wdd230/tree/main/chamber/images/leniits.webp",
-          "membership_level": "Bronze member"
+        "name": "Leniits",
+        "address": "88 Freight Lane, Tamale, CT 06611, Ghana",
+        "phone": "555-456-7890-6777",
+        "website": "https://leniits.com",
+        "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/leniits.webp",
+        "membership_level": "Bronze member"
       },
       {
-          "name": "New Age",
-          "address": "01 Ave, Konongo, St 611, Tamale",
-          "phone": "555-321-0987",
-          "website": "https://www.facebook.com/NewAgeAgroSolutionsRioClaro/",
-          "image": "https://raw.githubusercontent.com/monitech1/wdd230/tree/main/chamber/images/new age.webp",
-          "membership_level": "Silver member"
+        "name": "New Age",
+        "address": "01 Ave, Konongo, St 611, Tamale",
+        "phone": "555-321-0987",
+        "website": "https://www.facebook.com/NewAgeAgroSolutionsRioClaro/",
+        "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/new%20age.webp",
+        "membership_level": "Silver member"
       },
       {
-          "name": "United Bank of Africa",
-          "address": "189 Ali Drive, Lagos, Lg 987, Nigeria",
-          "phone": "555-654-3210",
-          "website": "https://www.ubaghana.com/",
-          "image": "https://raw.githubusercontent.com/monitech1/wdd230/tree/main/chamber/images/UBA.webp",
-          "membership_level": "Gold member"
+        "name": "United Bank of Africa",
+        "address": "189 Ali Drive, Lagos, Lg 987, Nigeria",
+        "phone": "555-654-3210",
+        "website": "https://www.ubaghana.com/",
+        "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/UBA.webp",
+        "membership_level": "Gold member"
       },
       {
-          "name": "Ghana Water Company",
-          "address": "189 KO Drive, Konongo, Ko 987, Konongo",
-          "phone": "555-654-3210",
-          "website": "https://www.gwcl.com.gh/",
-          "image": "https://raw.githubusercontent.com/monitech1/wdd230/tree/main/chamber/images/ecg.webp",
-          "membership_level": "Gold member"
+        "name": "Ghana Water Company",
+        "address": "189 KO Drive, Konongo, Ko 987, Konongo",
+        "phone": "555-654-3210",
+        "website": "https://www.gwcl.com.gh/",
+        "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/water.webp",
+        "membership_level": "Gold member"
       },
       {
-          "name": "Universal Merchant Bank",
-          "address": "189 KO Drive, Konongo, Ko 987, Konongo",
-          "phone": "555-654-3210",
-          "website": "https://www.myumbbank.com/",
-          "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/directory-images/umb.webp",
-          "membership_level": "Gold member"
+        "name": "Universal Merchant Bank",
+        "address": "189 KO Drive, Konongo, Ko 987, Konongo",
+        "phone": "555-654-3210",
+        "website": "https://www.myumbbank.com/",
+        "image": "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/images/umb.webp",
+        "membership_level": "Gold member"
       }
-  ]
-}
+    ]
+  }
+  
