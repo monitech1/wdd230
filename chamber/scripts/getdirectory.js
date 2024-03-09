@@ -1,4 +1,4 @@
-const url = "https://github.com/monitech1/wdd230/chamber/data/members.JSON";
+const url = "https://raw.githubusercontent.com/monitech1/wdd230/main/chamber/data/members.json";
 
 const directory = document.querySelector('#directory');
 
@@ -6,7 +6,6 @@ const getMembers = async () => {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        // console.log(data);
         displayMembers(data.members);
     } catch (error) {
         console.error("Error fetching data: ", error);

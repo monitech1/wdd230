@@ -5,8 +5,8 @@
     --secondary-color: #0B261A;
     --accent1-color: #E9F1EE;
     --accent2-color: #A69B83;
-    --red-color: #ebf0ee;
-    --green-color: #0a0a0a;
+    --red-color: #e9b4a8;
+    --green-color: #248562;
     --back: #E8E8E8;
 }
 
@@ -344,6 +344,7 @@ main.join-grid {
     padding: 1rem;
 }
 
+/* form */
 form fieldset {
     margin: 2rem 0;
     border: 1px solid var(--primary-color);
@@ -407,10 +408,107 @@ form input.submitBtn {
     max-width: 25rem;
     font-size: 1rem;
 }
+
+.submitBtn:hover {
+    background-color: var(--secondary-color);
+}
+/* memberships */
+table {
+    margin: 10px auto;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px #000;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    max-width: 400px;
+    padding: .5rem;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 5px 13px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: larger;
+    border: 1px solid var(--primary-color);
+    padding: 7px 15px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid var(--accent1-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent1-color);
+}
+
+.dark-style tbody tr:nth-child(even) {
+    background-color: #333333;
+}
+
 .memberships {
     margin: 1rem 0;
     padding: 0.8rem;
     background-color: var(--accent1-color);
     border: 1px solid var(--primary-color);
     border-radius: 4px;
+}
+
+/*---------- thank you page ----------*/
+.thank-you {
+    text-align: center;
+    padding: 1rem;
+}
+
+/*---------- DIRECTORY PAGE ----------*/
+.directory-menu {
+    margin: 1rem auto;
+	border: 1px solid var(--primary-color);
+	padding: 0.5rem;
+	background-color: var(--primary-color);
+	text-align: center;
+}
+
+.directory-menu button {
+    padding: 1rem;
+	font-weight: 700;
+    background-color: var(--accent1-color);
+}
+
+section {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.d-grid section {
+    text-align: center;
+}
+
+.d-grid section > * {
+	margin: 0.1rem;
+}
+
+
+
+.list section img {
+	display: none;
+}
+
+.list section:nth-child(even) {
+	background-color: var(--accent1-color);
 }
