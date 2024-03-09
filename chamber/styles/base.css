@@ -237,7 +237,7 @@ h3 {
     grid-column: 3 / 4;
 }
 .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
-    border: 1px solid #274F32;
+    border: 1px solid #6aa87c;
     padding: 10px;
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
@@ -483,7 +483,7 @@ tbody tr:nth-child(even) {
 }
 
 section {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 4px rgba(112, 62, 62, 0.7);
     padding: 20px;
 }
 
