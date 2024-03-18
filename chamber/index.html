@@ -19,6 +19,7 @@
     <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com%2FTourism-g317061-Kumasi_Ashanti_Region-Vacations.html&psig=AOvVaw3xOf6ypY58ZbM4cAc-KYAS&ust=1706802329736000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJjV9cuMiIQDFQAAAAAdAAAAABAE">
     <meta property="og:url" content="https://monitech1.github.io/wdd230//chamber/">
     <meta property="og:site_name" content="Kumasi Chamber of Commerce">
+    <meta name="e5c245a6-6ead-11ee-86b2-0242ac130002-e5c24614-6ead-11ee-86b2-0242ac130002" content="API_Key"> <!-- Replace API_Key with your actual API key -->
     <!-- link CSS stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css"> <!-- add -->
     <link rel="stylesheet" href="styles/base.css">
@@ -78,14 +79,23 @@
                     Featuring curated events that will have a positive impact on the economy, while boosting trade, tourism, and the local hospitality industry.
                     </p>
             </section>
+
             <section class="weather-card">
-                <img srcset="images/weather_300.webp 2x"
-                    src="images/Weather.jpg" 
-                    alt="weather illustration" 
-                    width="300" height="300">
+                <div class="card-img">
+                    <picture>
+                        <source srcset="images/weather_180.webp" media="(max-width: 200px)">
+                    </picture>
+                </div>
                 <h3>Weather</h3>
-                <p>This section will give the actual weather in the city Head off in search of beautiful sunsets, adventurous activities and interesting landmarks.</p>
+                <div class="weather-display">
+                    <img src="images/Weather.jpg" alt="weather image" height="200" width="200">
+                    <p class="temperature" id="temperature"></p>
+                    <figcaption></figcaption>
+                </div>
+                <div class="weather-threeDays"></div>
+                <p class="windchill" id="windchill"></p>
             </section>
+            
         </div>
         <div class="events-box"> 
         <img id="event-img" 
@@ -155,5 +165,10 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js" type="module"></script>
+    <script src="scripts/getweather.js" type="module"></script>
+    <script src="scripts/getbanner.js" defer></script>
+    <script src="scripts/closebanner.js" type="module"></script>
+    <script src="scripts/getjoin.js" type="module"></script>
 </body>
 </html>

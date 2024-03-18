@@ -204,6 +204,15 @@ h3 {
 .weather-card {
     grid-column: 3 / 4;
 }
+.weather-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.weather-threeDays {
+    padding-bottom: 10px;
+}
 .card-img img {
     max-width: 180px;
     width: 100%;
@@ -482,7 +491,7 @@ tbody tr:nth-child(even) {
     background-color: var(--accent1-color);
 }
 
-section {
+#directory section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
@@ -503,12 +512,10 @@ section {
 	margin: 0.1rem;
 }
 
-
-
 .list section img {
 	display: none;
 }
 
 .list section:nth-child(even) {
 	background-color: var(--accent1-color);
-}
+} 
