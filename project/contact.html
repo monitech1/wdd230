@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Homepage-adventures in Cozumel</title>
+    <meta name="author" content="Monigan Daniel">
+    <meta 
+        name="description" 
+        content="Scoots
+        - Home Page
+        - Explore Cozumel with the breeze in your hair on the official Scoots Rental website..">
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon-32x32.png">
+    <!-- meta tags for social media use -->
+    <meta property="og:title" content="Scoots - Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is the home page of Scoots">
+    <meta property="og:image" content="https://raw.githubusercontent.com/monitech1/wdd230/main/project/images/home%20page%202.webp">
+    <meta property="og:url" content="https://monitech1.github.io/wdd230/project/">
+    <meta property="og:site_name" content="Scoots">
+    <!-- link CSS stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- link JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/responsivemenu.js" defer></script>
+    <script src="scripts/getmaxtemp.js" defer></script>
+    <script src="scripts/closeherobanner.js" defer></script>
+    <script src="scripts/getcarrousel.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a id="logo-link" href="index.html">
+            <img class="scoots-logo" src="images/logo scoots.webp" alt="Scoots logo"></a>
+        <h1>Explore the Adventures in Cozumel</h1>
+        <a class="social-media" href="https://www.facebook.com" title="Facebook">
+            <img class="sm-logo" id="facebook" src="images/smfacebook.jpg" alt="Facebook logo"></a>
+        <a class="social-media" href="https://www.instagram.com" title="Instagram">
+            <img class="sm-logo" id="instagram" src="images/sminstagram" alt="Instagram logo"></a>
+        <a class="social-media" href="https://www.twitter.com" title="X">
+            <img class="sm-logo" id="twitter" src="images/smx.png" alt="Twitter logo"></a>
+        <label class="switch" aria-label="Toggle Switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <button id="menu" title="hamburger-menu"></button> 
+    <nav class="navigation">
+        <a href="#" class="active" aria-label="Home">Home</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+
+    <main class="contact">
+        <h1>Contact Us</h1>
+        <p>For any inquiries or reservations, please contact us using the information below or fill out the form.</p>
+        
+        <section class="contact-info">
+            <h2>Our Locations</h2>
+            <p><strong>Location 1:</strong> Zona Hotelera Nte., 77613 Cozumel, Q.R., Mexico</p>
+            <p><strong>Location 2:</strong> C. 1 Sur 58, Centro, 77600 Cozumel, Q.R., Mexico</p>
+            <p><strong>Email:</strong> <a href="mailto:info@scooterislandrentals.com">info@scooterislandrentals.com</a></p>
+            <p><strong>Phone:</strong> +1234567789</p>
+        </section>
+        
+        <section class="google-map">
+            <h2>Find Us</h2>
+            <div id="map" class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Aco99anEow-MhVep_t7N0Z2XqGNNhjE&ehbc=2E312F&noprof=1" width="640" height="480" title="adresses-map"></iframe>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <div class="contact-info">
+                <form action="/submit-contact-form" method="POST">
+                    <div>
+                        <label class="contact-name" for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label class="contact-email" for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label class="contact-comment" for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" required></textarea>
+                    </div>
+                    <div>
+                        <button class="contact-submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <img class="scoots-logo" src="images/logo scoots.webp" alt="Scoots logo">
+        <section class="contact-footer1">
+            <h3>Scoots Centro</h3>
+            <p>143 Benito New Park, Cero, 77687 Cozumel, USA</p>
+            <p>Email: info@scoots-cero.com</p>
+            <p>Phone: 123-984-8493</p>
+        </section>
+        <section class="contact-footer2">
+            <h3>Scoots Monigan Maya</h3>
+            <p>123 Main Road, Kumasi Adom, 77675 Cozumel, USA</p>
+            <p>Email: info@scoots-cero.com</p>
+            
+            <p>Phone: 123-235-3249</p>
+        </section>
+        <hr>
+        <section class="author">
+            <p>&copy;<span id="year"></span> Scoots | Monigan Daniel | WDD230 Final Project | Last Updated: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+     
+</body>
+
+</html>

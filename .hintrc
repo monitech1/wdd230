@@ -9,7 +9,9 @@
       {
         "ignore": [
           "-webkit-text-size-adjust",
-          "width: fit-content"
+          "width: fit-content",
+          "backdrop-filter",
+          "user-select"
         ]
       }
     ],
