@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 1000px) {
     /* responsive navigation bar */
     .navigation {
@@ -24,6 +23,14 @@
         height: 46px;
     }
 
+    /* responsive home-grid */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+    
     /* responsive footer */
     footer {
         display: grid;
@@ -45,4 +52,31 @@
     .author {
         grid-column: 2 / 4;
     }
-} 
+    /* main */
+    .weather-card, #carrousel-card, #special-offer {
+        margin-top: 20px;
+    }
+    /* RESERVATION PAGE */
+    .reservepage-msg {
+        font-size: 35px;
+    }
+    .reserve-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    /* RENTALS PAGE */
+    .rentals-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* responsive table */
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}

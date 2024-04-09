@@ -128,7 +128,7 @@
         <img class="scoots-logo" src="images/logo scoots.webp" alt="Scoots logo">
         <section class="contact-footer1">
             <h3>Scoots Centro</h3>
-            <p>143 Benito New Park, Cero, 77687 Cozumel, </p>
+            <p>143 Benito New Park, Cero, 77687 Cozumel</p>
             <p>Email: info@scoots-cero.com</p>
             <p>Phone: 123-984-8493</p>
         </section>
@@ -136,7 +136,6 @@
             <h3>Scoots Monigan Maya</h3>
             <p>123 Main Road, Kumasi Adom, 77675 Cozumel, USA</p>
             <p>Email: info@scoots-cero.com</p>
-            
             <p>Phone: 123-235-3249</p>
         </section>
         <hr>
@@ -145,13 +144,21 @@
         </section>
         <section id="weather">
             <h2>Weather Information</h2>
-            <p>Current Temperature: <span id="currentTemp"></span></p>
-            <p>Humidity: <span id="humidity"></span></p>
-            <p></p>
-            <p>Tomorrow at 3:00 PM: <span id="nextDayTemp"></span></p>
-    
+            <div class="weather-info">
+                <div class="weather-item">
+                    <p class="weather-label">Current Temperature:</p>
+                    <p class="weather-data"><span id="currentTemp"></span></p>
+                </div>
+                <div class="weather-item">
+                    <p class="weather-label">Humidity:</p>
+                    <p class="weather-data"><span id="humidity"></span></p>
+                </div>
+                <div class="weather-item">
+                    <p class="weather-label">Tomorrow at 3:00 PM:</p>
+                    <p class="weather-data"><span id="nextDayTemp"></span></p>
+                </div>
+            </div>
         </section>
+        
     </footer>
-</body>
-
-</html>
+    
