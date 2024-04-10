@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Failed to load rental data:', error));
 });
 
+
 function displayRentals(rentals) {
     const container = document.getElementById('rentalsContainer');
     rentals.forEach(category => {
@@ -16,11 +17,13 @@ function displayRentals(rentals) {
         category.options.forEach(option => {
             const item = document.createElement('div');
             item.className = 'rental-item';
+            
+            const imageHTML = option.img ? `<img src="${option.img}" alt="${option.name} loading= "lazy" style="width: 200px; height: auto;">` : '';
             item.innerHTML = `
+                ${imageHTML}
                 <h3>${option.name} - ${option.capacity}</h3>
                 <div class="rental-pricing">
                     Reservation: Half Day $${option.pricing.reservation.halfDay}, Full Day $${option.pricing.reservation.fullDay}<br>
-                    <br>
                     Walk-In: Half Day $${option.pricing.walkIn.halfDay}, Full Day $${option.pricing.walkIn.fullDay}
                 </div>
             `;
@@ -29,6 +32,7 @@ function displayRentals(rentals) {
         container.appendChild(section);
     });
 }
+
 
 function displayRentalAgreements(agreements) {
     const list = document.getElementById('agreementsList');

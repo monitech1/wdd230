@@ -1,9 +1,10 @@
-const hamButton = document.querySelector('#menu');
-const mainnav = document.querySelector('.navigation');
 
-/* when the hamburger button is clicked, toggle the open class
- on the mainnav and hamburger button */
-hamButton.addEventListener('click', () => {
-    mainnav.classList.toggle('open');
-    hamButton.classList.toggle('open');
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.getElementById('menu');
+    const nav = document.querySelector('nav');
+
+    menuButton.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
 });
